@@ -1,0 +1,360 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,300&family=Manrope:wght@400;500;600;700&display=swap');
+
+
+body:has(.gerpla), .wp-site-blocks:has(>.gerpla) {margin:0;padding:0}
+.gerpla {--ink:#153c2d;--muted:#52645b;--lime:#99c100;--mist:#f3f7f2;margin:0;color:var(--ink);background:white;font:18px/1.5 'PT Sans',sans-serif}
+.gerpla :is(h1,h2,h3,p,blockquote,ul){margin:0;font-family:inherit}
+.gerpla a {color:inherit}
+.gerpla .wrap {width:min(1400px,calc(100% - 48px));margin-inline:auto}
+.gerpla .scene {position:relative;isolation:isolate;display:grid;place-items:center;text-align:center;color:white;padding:48px 24px;background:#153c2d}
+.gerpla .scene > img {position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.gerpla .scene::before {content:'';position:absolute;inset:0;background:#153c2d;opacity:.44;z-index:-1}
+.gerpla .hero {min-height:580px}
+.gerpla .hero-copy {padding-top:75px}
+.gerpla h1 {font-size:clamp(36px,5vw,56px);line-height:1.15;font-weight:700;margin-bottom:24px;color:inherit}
+.gerpla .hero-copy p {font-size:clamp(18px,2vw,22px)}
+.gerpla .hero-arrow {position:absolute;top:50%;transform:translateY(-50%);display:grid;place-items:center;width:44px;height:44px}
+.gerpla .prev {left:5%}.gerpla .next {right:5%}
+.gerpla .dots {position:absolute;bottom:40px;display:flex;gap:13px;align-items:center}
+.gerpla .intro {display:grid;grid-template-columns:1fr 1fr;gap:24px;padding-block:96px 105px;min-height:430px;box-sizing:border-box}
+.gerpla .eyebrow {font-size:13px;color:#00642e;font-weight:700;margin-bottom:16px}
+.gerpla h2 {font-size:clamp(32px,4vw,48px);line-height:1.15;font-weight:700;color:inherit}
+.gerpla .rule {width:72px;height:4px;background:var(--lime);margin-top:56px}
+.gerpla .intro p:not(.eyebrow), .gerpla .trust p:not(.eyebrow) {color:var(--muted)}
+.gerpla .intro-copy p+p {margin-top:56px}
+.gerpla .services {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding-bottom:92px}
+.gerpla .service {border-radius:8px;overflow:hidden;background:var(--mist);display:block;text-decoration:none}
+.gerpla .service > img {display:block;width:100%;aspect-ratio:450.667 / 280;object-fit:cover}
+.gerpla .service-label {min-height:108px;box-sizing:border-box;padding:24px;display:flex;align-items:flex-start;justify-content:space-between;gap:10px;position:relative}
+.gerpla .service-label h3 {font-size:21px;line-height:1.2;font-weight:700}
+.gerpla .service-label::after {content:'';position:absolute;left:24px;bottom:22px;width:36px;height:3px;background:var(--lime)}
+.gerpla .service:nth-child(2) .service-label::after {background:#50abdf}
+.gerpla .trust {background:var(--mist)}
+.gerpla .trust .wrap {display:grid;grid-template-columns:1fr 2fr;gap:24px;padding-block:96px;box-sizing:border-box;min-height:760px}
+.gerpla .trust h2 {font-size:clamp(32px,4vw,44px)}
+.gerpla .trust .rule {margin:72px 0 34px}
+.gerpla .trust-copy {max-width:410px}
+.gerpla .perks {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:24px;list-style:none;padding:0}
+.gerpla .perks li {display:flex;gap:24px;align-items:flex-start;padding:8px 0 22px;border-bottom:1px solid #dce6df;font-size:17px}
+.gerpla .perks li:nth-child(n+3) {padding-top:24px}
+.gerpla .icon {flex:0 0 32px;height:32px;display:grid;place-items:center}
+.gerpla .testimonial {min-height:410px;align-content:start;padding-top:60px}
+.gerpla .testimonial::before {opacity:.77}
+.gerpla .testimonial p {font-size:14px}
+.gerpla blockquote {font-size:clamp(22px,3vw,30px);margin-top:35px;line-height:1.45}
+.gerpla .testimonial .rule {width:56px;height:3px;margin:37px auto 22px}
+.gerpla .testimonial .pager {margin-top:26px;letter-spacing:.26em}
+.gerpla .contact {background:#edf6fc}
+.gerpla .contact .wrap {min-height:230px;display:flex;align-items:center;justify-content:space-between;gap:24px;padding-block:34px;box-sizing:border-box}
+.gerpla .contact h2 {font-size:clamp(28px,4vw,40px)}
+.gerpla .cta {min-width:250px;display:inline-flex;justify-content:space-between;align-items:center;gap:18px;background:#9cbe12;color:white;border-radius:4px;padding:14px 28px;box-sizing:border-box;text-decoration:none}
+.gerpla footer {background:#063e2c;color:#d2e3d9}
+.gerpla footer .wrap {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;min-height:350px;box-sizing:border-box;padding-block:66px 48px;background:linear-gradient(to right,#50abdf 66.15%,#99c100 66.15%) top / 100% 4px no-repeat}
+.gerpla footer h3 {font-size:18px;color:white;font-weight:700;margin-bottom:20px}
+.gerpla footer p {font-size:15px}
+.gerpla .legal {padding-block:36px 16px}
+.gerpla .legal-info {display:grid;grid-template-columns:1fr 2fr;align-items:center;gap:24px;min-height:155px;color:var(--muted);font-size:13px;line-height:1.6}
+.gerpla .legal-info img {width:min(100%,400px);height:auto}
+.gerpla .copyright {display:flex;justify-content:space-between;gap:24px;border-top:1px solid #dce6df;padding-top:16px;color:var(--muted);font-size:12px}
+@media(max-width:780px){
+.gerpla .wrap {width:calc(100% - 36px)}
+.gerpla .hero {min-height:460px;padding-inline:58px}
+.gerpla .hero-copy {padding-top:0}
+.gerpla .prev {left:8px}.gerpla .next {right:8px}
+.gerpla .intro,.gerpla .services,.gerpla .trust .wrap,.gerpla .legal-info {grid-template-columns:1fr}
+.gerpla .intro,.gerpla .trust .wrap {padding-block:60px;min-height:0}
+.gerpla .services {padding-bottom:60px}
+.gerpla .intro-copy p+p {margin-top:20px}
+.gerpla .rule,.gerpla .trust .rule {margin-top:26px}
+.gerpla .perks {gap:0 14px}
+.gerpla .perks li {gap:10px;font-size:15px}
+.gerpla .contact .wrap {flex-wrap:wrap}
+.gerpla footer .wrap {grid-template-columns:repeat(2,minmax(0,1fr));padding-block:40px}
+.gerpla .legal-info {padding-bottom:24px}
+}
+
+.gerpla{--ink:#1d1d1f;--muted:#707070;--mist:#f5f5f7;--blue:#0066cc;--line:#d6d6d6;--display:'SF Pro Display',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;font:400 17px/1.47 'SF Pro Text',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;letter-spacing:-.374px}
+.gerpla .hero{min-height:0;text-align:center;padding-block:clamp(52px,7vw,90px) 0}
+.gerpla .hero-copy{padding:0 24px 40px}
+.gerpla h1{font-family:var(--display);font-size:clamp(38px,6.5vw,80px);font-weight:600;line-height:1.05;letter-spacing:-1.2px;margin-bottom:16px}
+.gerpla h2,.gerpla .trust h2,.gerpla .contact h2{font-family:var(--display);font-size:clamp(30px,4vw,40px);font-weight:600;line-height:1.08;letter-spacing:0}
+.gerpla .hero-copy p{font-size:clamp(17px,2vw,21px);color:var(--muted)}
+.gerpla .hero-gallery{position:relative;border-radius:28px;overflow:hidden;background:var(--mist)}
+.gerpla .hero-photo{display:block;width:100%;height:clamp(270px,42vw,580px);object-fit:cover}
+.gerpla .hero-arrow,.gerpla .dots{border:0;color:#1d1d1f;background:rgba(245,245,247,.88);border-radius:36px}
+.gerpla .hero-arrow{font:28px/1 system-ui;cursor:pointer;padding:0}
+.gerpla .prev{left:16px}.gerpla .next{right:16px}
+.gerpla .dots{left:50%;transform:translateX(-50%);bottom:16px;gap:4px;padding:5px 10px}
+.gerpla .dots button{display:grid;place-items:center;border:0;background:none;padding:8px;cursor:pointer}
+.gerpla .dots button::before{content:'';width:8px;height:8px;border-radius:50%;background:#707070}
+.gerpla .dots button[aria-pressed=true]::before{background:#1d1d1f}
+.gerpla :is(a,button):focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+.gerpla .intro,.gerpla .trust .wrap{min-height:0;padding-block:clamp(52px,7vw,90px)}
+.gerpla .intro-copy p+p{margin-top:20px}
+.gerpla .eyebrow{color:var(--ink);letter-spacing:.02em;font-weight:600}
+.gerpla .rule,.gerpla .service-label::after{display:none}
+.gerpla .trust-copy>p:last-child{margin-top:24px}
+.gerpla .services{width:100%;box-sizing:border-box;padding:clamp(44px,6vw,90px) max(24px,calc((100% - 1400px)/2));background:var(--mist);gap:20px}
+.gerpla .service{background:#fff;border-radius:28px}
+.gerpla .service-label{min-height:0;padding:28px}
+.gerpla .service-label h3{font-weight:600}
+.gerpla .service:hover h3,.gerpla footer a{color:var(--blue)}
+.gerpla .trust{background:#fff}
+.gerpla .perks li{border-color:var(--line)}
+.gerpla .icon img,.gerpla .service-label img{filter:grayscale(1) brightness(.6)}
+.gerpla .testimonial{box-sizing:border-box;width:min(1400px,calc(100% - 48px));margin-inline:auto;border-radius:28px;overflow:hidden;align-content:center;padding:52px 24px}
+.gerpla .testimonial::before{background:#000;opacity:.58}
+.gerpla .testimonial cite{margin-top:24px;font-style:normal}
+.gerpla .contact{background:#fff}
+.gerpla .cta{min-width:0;border-radius:9999px;background:#0071e3;font-size:12px;line-height:16px;letter-spacing:-.12px;padding:10px 16px}
+.gerpla .cta img{width:16px;height:16px}
+.gerpla footer{background:var(--mist);color:var(--muted)}
+.gerpla footer .wrap{background:none;min-height:0;padding-block:52px}
+.gerpla footer h3{color:var(--ink);font-weight:600}
+.gerpla .copyright{border-color:var(--line)}
+
+.gerpla .hero-scroll::after { content: ""; display: block; height: 100vh; height: 100svh; }
+.gerpla .hero-gallery { position: sticky; top: 16px; }
+.gerpla .hero-photo { max-height: calc(100svh - 32px); }
+.gerpla .hero-arrow:disabled { opacity: .5; cursor: default; }
+
+.gerpla .hero-gallery { overflow: visible; background: #fff; }
+.gerpla .hero-media { position: relative; overflow: hidden; border-radius: 28px; background: var(--mist); }
+.gerpla .hero-copy { display: grid; align-content: center; min-height: 145px; padding: 0 0 20px; box-sizing: border-box; }
+.gerpla .hero-photo { height: clamp(210px, 40vw, 580px); max-height: max(100px, calc(100svh - 240px)); }
+@media (max-width: 780px) {
+  .gerpla .hero-copy { min-height: 180px; }
+  .gerpla .hero-copy h1 { font-size: clamp(26px, 7vw, 38px); }
+}
+
+/* Gerpla: small screen adjustments */
+@media (max-width: 780px) {
+  .gerpla .copyright { flex-wrap: wrap; }
+  .gerpla .service-label { padding: 24px; }
+}
+
+.gerpla .services-track > .services {
+  padding-block: 100px;
+}
+.gerpla .services-track.is-scroll-pinned::after {
+  content: "";
+  display: block;
+  height: var(--services-scroll-distance);
+}
+.gerpla .services-track.is-scroll-pinned > .services {
+  position: sticky;
+  top: var(--services-sticky-top);
+}
+.gerpla .service[data-scroll-reveal] {
+  opacity: var(--service-progress);
+  translate: 0 var(--service-offset);
+}
+.gerpla .service[data-scroll-reveal="pending"] { pointer-events: none; }
+.gerpla .service[data-scroll-reveal]:focus-visible {
+  opacity: 1;
+  translate: none;
+}
+
+/* Full-height sections with native scroll snapping. */
+html:has(.gerpla) { scroll-snap-type: none; }
+.gerpla { --panel-height: 100vh; --panel-height: 100svh; }
+.gerpla > :is(.intro, .trust, .testimonial, .contact, footer, .legal),
+.gerpla .services-track > .services {
+  box-sizing: border-box;
+  min-height: var(--panel-height);
+}
+.gerpla > :is(.intro, .trust, .testimonial, .contact, footer, .legal),
+.gerpla > .services-track { scroll-snap-align: start; }
+.gerpla .intro { align-content: center; }
+.gerpla :is(.trust, .contact, footer, .legal) { display: grid; align-content: center; }
+.gerpla .services-track > .services { align-content: center; }
+
+.gerpla .hero { padding: 0; }
+.gerpla .hero-scroll { position: relative; width: 100%; }
+.gerpla .hero-scroll::after { height: var(--panel-height); }
+.gerpla .hero-gallery {
+  width: 100%;
+  top: 0;
+  min-height: var(--panel-height);
+  border-radius: 0;
+}
+.gerpla .hero-media { min-height: var(--panel-height); border-radius: 0; isolation: isolate; }
+.gerpla .hero-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / .48);
+  z-index: -1;
+}
+.gerpla .hero-photo {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  height: 100%;
+  max-height: none;
+}
+.gerpla .hero-copy {
+  min-height: var(--panel-height);
+  padding: clamp(76px, 12vh, 124px) max(64px, 12vw);
+  color: white;
+}
+.gerpla .hero-copy p { color: inherit; }
+.gerpla .hero-stop {
+  position: absolute;
+  inset-inline-start: 0;
+  inset-block-start: calc(var(--panel-height) * var(--slide-offset));
+  width: 1px;
+  height: 1px;
+  pointer-events: none;
+  scroll-snap-align: start;
+}
+@media (max-width: 780px) {
+  .gerpla .hero-copy { padding-inline: 54px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html:has(.gerpla) { scroll-snap-type: none; }
+}
+
+@media (any-pointer: fine) {
+  html:has(.gerpla) { scroll-snap-type: none; }
+}
+
+/* Terrova-inspired visual treatment for Gerpla. */
+.gerpla {
+  --ink: #141513;
+  --muted: #6a6a62;
+  --mist: #f5f5f2;
+  --olive: #6b6f4e;
+  --olive-dark: #41442f;
+  --olive-light: #ecede4;
+  --line: #d7d9c6;
+  --blue: var(--olive);
+  --display: Manrope, sans-serif;
+  --gutter: clamp(20px, 4.69vw, 60px);
+  --section-space: clamp(64px, 9.375vw, 120px);
+  font: 400 17px/1.6 Manrope, sans-serif;
+  letter-spacing: -.003em;
+}
+.gerpla .wrap { width: min(1320px, calc(100% - var(--gutter) * 2)); }
+.gerpla :is(h2, .trust h2, .contact h2) {
+  font-size: clamp(36px, 4.375vw, 56px);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -.03em;
+}
+.gerpla .accent-type { font: italic 300 1em/1 Fraunces, Georgia, serif; }
+.gerpla .hero-gallery { width: 100%; padding: 16px; box-sizing: border-box; }
+.gerpla .hero-media, .gerpla .hero-copy { min-height: calc(var(--panel-height) - 32px); }
+.gerpla .hero-media { border-radius: 28px; }
+.gerpla .hero-media::after { background: linear-gradient(180deg, rgb(20 21 19 / .14), rgb(20 21 19 / .22) 28%, rgb(20 21 19 / .76)); }
+.gerpla .hero-copy {
+  text-align: left;
+  align-content: end;
+  padding: 64px clamp(24px, 3.75vw, 48px) clamp(108px, 19vh, 152px);
+}
+.gerpla .hero-copy h1 {
+  max-width: 960px;
+  margin-bottom: 24px;
+  font: 500 clamp(42px, 7.5vw, 96px)/.98 Manrope, sans-serif;
+  letter-spacing: -.035em;
+}
+.gerpla .hero-copy p { max-width: 620px; color: rgb(255 255 255 / .88); font-size: 19px; }
+.gerpla .hero-arrow {
+  inset: auto auto 24px auto;
+  transform: none;
+  background: #fff;
+  color: var(--olive-dark);
+}
+.gerpla .hero-arrow.prev { right: 78px; left: auto; }
+.gerpla .hero-arrow.next { right: 24px; }
+.gerpla .dots { left: clamp(24px, 3.75vw, 48px); bottom: 26px; transform: none; background: rgb(20 21 19 / .58); }
+.gerpla .dots button::before { background: #b8bc9c; }
+.gerpla .dots button[aria-pressed=true]::before { background: #fff; }
+
+.gerpla .intro, .gerpla .trust .wrap { padding-block: var(--section-space); gap: clamp(32px, 5vw, 64px); }
+.gerpla .intro { align-items: center; }
+.gerpla .intro-copy, .gerpla .trust-copy > p:last-child { font-size: 19px; }
+.gerpla .intro-copy p + p { margin-top: 20px; }
+.gerpla .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 9px 16px 9px 14px;
+  margin-bottom: 20px;
+  color: #3a3a35;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: .08em;
+}
+.gerpla .eyebrow::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--olive); }
+.gerpla .services-track > .services {
+  width: 100%;
+  padding-inline: max(var(--gutter), calc((100% - 1320px) / 2));
+  gap: 24px;
+  background: var(--mist);
+}
+.gerpla .service { position: relative; min-height: clamp(300px, 36vw, 460px); background: var(--olive-dark); border-radius: 28px; }
+.gerpla .service > img { position: absolute; inset: 0; height: 100%; }
+.gerpla .service::before { content: ""; position: absolute; z-index: 1; inset: 0; background: linear-gradient(transparent 35%, rgb(20 21 19 / .85)); }
+.gerpla .service-label { position: absolute; z-index: 2; inset: auto 0 0; padding: 32px; align-items: end; color: #fff; }
+.gerpla .service-label h3, .gerpla .service:hover h3 { font-size: clamp(23px, 2.65vw, 34px); font-weight: 500; line-height: 1.16; letter-spacing: -.02em; color: #fff; }
+.gerpla .service-label img { width: 44px; height: 44px; box-sizing: border-box; padding: 12px; border-radius: 50%; background: #fff; filter: none; }
+.gerpla .service:hover .service-label img { background: var(--olive-light); }
+
+.gerpla .trust { background: var(--olive-dark); color: #fff; }
+.gerpla .trust .eyebrow { color: #fff; border-color: rgb(255 255 255 / .24); background: rgb(255 255 255 / .1); }
+.gerpla .trust .eyebrow::before { background: #b8bc9c; }
+.gerpla .trust p:not(.eyebrow) { color: var(--line); }
+.gerpla .perks li { border-color: rgb(215 217 198 / .35); }
+.gerpla .icon img { filter: brightness(0) invert(.86); }
+
+.gerpla .testimonial { width: calc(100% - 32px); padding: 64px var(--gutter); }
+.gerpla .testimonial::before { background: var(--ink); opacity: .65; }
+.gerpla .testimonial :is(p, blockquote) { max-width: 850px; }
+.gerpla .testimonial p { font-size: 19px; }
+.gerpla .testimonial blockquote { font: italic 300 clamp(30px, 4.375vw, 56px)/1.1 Fraunces, Georgia, serif; }
+
+.gerpla .contact { background: linear-gradient(#fff, var(--olive-light)); }
+.gerpla .contact .wrap { flex-direction: column; justify-content: center; text-align: center; gap: 28px; }
+.gerpla .cta { background: var(--olive); padding: 6px 6px 6px 26px; gap: 16px; font-size: 16px; font-weight: 600; line-height: 1.4; }
+.gerpla .cta:hover { background: var(--olive-dark); }
+.gerpla .cta img { width: 44px; height: 44px; padding: 13px; box-sizing: border-box; border-radius: 50%; background: #fff; }
+.gerpla footer { background: var(--olive-light); padding: 16px; color: #c2c2b9; }
+.gerpla footer .wrap { width: 100%; max-width: 1440px; padding: clamp(32px, 6.875vw, 88px) clamp(24px, 3.75vw, 48px); background: var(--ink); border-radius: 28px; }
+.gerpla footer h3 { color: #b8bc9c; font-weight: 600; }
+.gerpla footer a { color: #fff; }
+
+@media (max-width: 780px) {
+  .gerpla .hero-gallery { padding: 12px; }
+  .gerpla .hero-media, .gerpla .hero-copy { min-height: calc(var(--panel-height) - 24px); }
+  .gerpla :is(.hero-media, .service, .testimonial, footer .wrap) { border-radius: 18px; }
+  .gerpla .hero-copy { padding-inline: 24px; }
+  .gerpla .hero-copy h1 { font-size: clamp(36px, 9.5vw, 56px); }
+  .gerpla .service-label { padding: 24px; }
+}
+
+/* Restore the section spacing used before full-screen navigation. */
+.gerpla > :is(.intro, .trust, .testimonial, .contact, footer, .legal),
+.gerpla .services-track > .services { min-height: 0; scroll-snap-align: none; }
+.gerpla .intro, .gerpla .trust .wrap {
+  padding-block: clamp(52px, 7vw, 90px);
+}
+.gerpla .services-track > .services {
+  position: static;
+  padding-block: 100px;
+}
+.gerpla .services-track::after { display: none; }
+.gerpla .service { opacity: 1; translate: none; }
+.gerpla .testimonial { min-height: 410px; padding-block: 52px; }
+.gerpla .contact .wrap { min-height: 230px; padding-block: 34px; }
+.gerpla footer .wrap { min-height: 0; padding-block: 52px; }
+.gerpla .legal { padding-block: 36px 16px; }
+@media(max-width:780px) {
+  .gerpla .intro, .gerpla .trust .wrap { padding-block: 60px; }
+  .gerpla footer .wrap { padding-block: 40px; }
+}
+
+.gerpla .testimonial { margin-top: 16px; }
